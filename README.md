@@ -1,2 +1,2 @@
 # ElectAI
-A noel dataset for Election related claim understanding
+A novel dataset for Election related claim understanding

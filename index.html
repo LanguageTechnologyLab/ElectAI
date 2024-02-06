@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<style>
+    .content {
+      max-width: 50%;
+      /* text-align: center; */
+      margin: auto;
+    }
+    </style>
+<html>
+<body>
+
+<div class="content">
+<h1>ElectAI</h1>
+
+</div>
+
+<div class="content">
+    <h2>Taxonomy</h2>
+    <img src="proposed-taxonomy.png">
+
+</div>
+
+<div class="content">
+<h2>Datasets</h2>
+The datasets can be accssed through the following link: <a href="https://github.com/LanguageTechnologyLab/ElectAI">Datasets</a> <br>
+<br>
+The dataset folder contains two subfolders.
+<ul>
+    <li>claim understanding: This benchmark dataset is annotated based on the taxonomy.
+        The file 'claims-annotated.csv' contains the following columns:
+        <ol>
+            <li>tweet: the human or LLM-generated tweet.</li>
+            <li>Jurisdiction: incdicates if election jurisdiction is specified.</li>
+            <li>Jurisdiction - State: indicates if state level jursidiction.</li>
+            <li>Jurisdiction - County: indicates if county level jursidiction.</li>
+            <li>Jurisdiction - federal: indicates if federal elections are mentioned.</li>
+            <li>Equipment: indicates if election equipments are mentioned.</li>
+            <li>Equipment - Machines: indicates if the tweet mentions voting machines.</li>
+            <li>Equipment - Ballots: indicates if the tweet mentions ballots.</li>
+            <li>Processes: indicates if the tweet mentions any election process.</li>
+            <li>Processes - Vote Counting: indicates if the tweet mentions vote counting process.</li>
+            <li>Claim of Fraud: indicates if the tweet has a claim of fraud.</li>
+            <li>Claim of Fraud - Corruption: indicates if the claim is related to corruption.</li>
+            <li>Claim of Fraud - Illegal Voting: indicates if the claim is related to illegal voting.</li>
+        </ol>
+    </li> <br>
+    <li>authorship attribution: This folder contains train (train.csv) and test(test.csv) files for the authorship attribution task.
+        The files contain the following columns:
+        <ol>
+            <li>tweet: the human or LLM-generated tweet.</li>
+            <li>label: the label denoting the human/LLM used to generate the tweet.</li>
+        </ol>
+    </li>
+
+</ul>
+</div>
+
+<div class="content">
+<h2>Code</h2>
+
+</div>
+
+
+</body>
+</html>

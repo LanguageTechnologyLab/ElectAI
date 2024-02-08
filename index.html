@@ -51,11 +51,43 @@ The dataset folder contains two subfolders.
     </li>
 
 </ul>
+
 </div>
 
 <div class="content">
 <h2>Code</h2>
-The datasets and code can be accessed through the following link: <a href="https://github.com/LanguageTechnologyLab/ElectAI">Datasets</a> <br>
+<p>The datasets and code can be accessed through the following link: <a href="https://github.com/LanguageTechnologyLab/ElectAI">Datasets</a></p>
+
+All the scripts are implemented using python.<br><br>
+
+<h3>Installation</h3>
+<p>Clone the repository from github using the link above as follows:</p>
+<pre>git clone https://github.com/LanguageTechnologyLab/ElectAI.git</pre>
+
+<p>Navigate to the GenOffense directory and install the required packages</p>
+<pre>cd ElectAI
+pip install -r requirements.txt</pre>
+
+<h3>Accessing Data</h3>
+<p>The files are a '.csv' files. The columns are tab separated. These file can be loaded in python using the pandas library as follows.</p>
+<pre>
+import pandas
+pandas.read_csv(filename, sep="\t")
+</pre>
+
+<h3>Claim Understanding</h3>
+<p>To evaluate an LLM for claim understanding, use the following command. You need to specify the name of the model.</p>
+<pre>python incontext.py MODEL_NAME</pre>
+
+<p>MODEL_NAME can be <em>llama</em>, <em>falcon</em>, <em>mistral</em>, <em>flan</em></p>
+
+<h3>Authorship Attribution</h3>
+<p>To train/fine-tune a model for classification, run the following command. You must specify the name of the model. In case of Random forest, specify the features to be used</p>
+<pre>python trainer.py MODEL_NAME FEATURE_NAME</pre>
+
+<p>MODEL_NAME can be <em>bert</em>, <em>roberta</em>, <em>rf</em></p>
+<p>FEATURE_NAME can be <em>tfidf</em>, <em>word2vec</em></p>
+
 </div>
 
 

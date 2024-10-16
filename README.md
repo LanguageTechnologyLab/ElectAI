@@ -4,7 +4,7 @@ ElectAI
 Taxonomy
 --------
 
-![](proposed-taxonomy.png)
+<img src="proposed-taxonomy.png">
 
 Datasets
 --------

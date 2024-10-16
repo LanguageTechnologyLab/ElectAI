@@ -76,7 +76,7 @@ FEATURE\_NAME can be _tfidf_, _word2vec_
 
 Citation
 ----
-```
+```bibtex
 @article{dmonte2024classifying,
   title={Classifying Human-Generated and AI-Generated Election Claims in Social Media},
   author={Dmonte, Alphaeus and Zampieri, Marcos and Lybarger, Kevin and Albanese, Massimiliano},

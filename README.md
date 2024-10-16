@@ -4,7 +4,7 @@ ElectAI
 Taxonomy
 --------
 
-<img src="proposed-taxonomy.png">
+<img src="proposed-taxonomy.png" width="100%">
 
 Datasets
 --------
@@ -54,13 +54,13 @@ pip install -r requirements.txt
 The files are a '.csv' files. The columns are tab separated. These file can be loaded in python using the pandas library as follows.
 ```
 import pandas
-pandas.read\_csv(filename, sep="\\t")
+pandas.read_csv(filename, sep="\t")
 ```
 ### Claim Understanding
 
 To evaluate an LLM for claim understanding, use the following command. You need to specify the name of the model.
 ```
-python incontext.py MODEL\_NAME
+python incontext.py MODEL_NAME
 ```
 MODEL\_NAME can be _llama_, _falcon_, _mistral_, _flan_
 
@@ -68,8 +68,19 @@ MODEL\_NAME can be _llama_, _falcon_, _mistral_, _flan_
 
 To train/fine-tune a model for classification, run the following command. You must specify the name of the model. In case of Random forest, specify the features to be used
 ```
-python trainer.py MODEL\_NAME FEATURE\_NAME
+python trainer.py MODEL_NAME FEATURE_NAME
 ```
 MODEL\_NAME can be _bert_, _roberta_, _rf_
 
 FEATURE\_NAME can be _tfidf_, _word2vec_
+
+Citation
+----
+```
+@article{dmonte2024classifying,
+  title={Classifying Human-Generated and AI-Generated Election Claims in Social Media},
+  author={Dmonte, Alphaeus and Zampieri, Marcos and Lybarger, Kevin and Albanese, Massimiliano},
+  journal={arXiv preprint arXiv:2404.16116},
+  year={2024}
+}
+```

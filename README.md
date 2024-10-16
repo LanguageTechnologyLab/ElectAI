@@ -41,35 +41,35 @@ All the scripts are implemented using python.
 ### Installation
 
 Clone the repository from github using the link above as follows:
-
+```
 git clone https://github.com/LanguageTechnologyLab/ElectAI.git
-
+```
 Navigate to the GenOffense directory and install the required packages
-
+```
 cd ElectAI
 pip install -r requirements.txt
-
+```
 ### Accessing Data
 
 The files are a '.csv' files. The columns are tab separated. These file can be loaded in python using the pandas library as follows.
-
+```
 import pandas
 pandas.read\_csv(filename, sep="\\t")
-
+```
 ### Claim Understanding
 
 To evaluate an LLM for claim understanding, use the following command. You need to specify the name of the model.
-
+```
 python incontext.py MODEL\_NAME
-
+```
 MODEL\_NAME can be _llama_, _falcon_, _mistral_, _flan_
 
 ### Authorship Attribution
 
 To train/fine-tune a model for classification, run the following command. You must specify the name of the model. In case of Random forest, specify the features to be used
-
+```
 python trainer.py MODEL\_NAME FEATURE\_NAME
-
+```
 MODEL\_NAME can be _bert_, _roberta_, _rf_
 
 FEATURE\_NAME can be _tfidf_, _word2vec_
